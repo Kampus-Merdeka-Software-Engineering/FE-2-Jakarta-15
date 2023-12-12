@@ -275,12 +275,14 @@ img {
 .room_container {
     gap: 1rem;
     padding-top: 4.5rem;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .room_card {
     padding: 1.5rem;
     border-radius: 1rem;
     transition: transform .3s ease-out;
+    cursor: pointer;
 }
 
 .room_card-img {
@@ -304,8 +306,7 @@ img {
 }
 
 .room_card:hover {
-    box-shadow: 0 6px 8px hsla(var(--hue), 4%, 5%, .1);
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 /* ============= FOOTER ============= */

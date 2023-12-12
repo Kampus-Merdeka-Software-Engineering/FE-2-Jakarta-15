@@ -15,7 +15,7 @@
         <nav class="nav_room-detail container">
             <a href="javascript:void(0);" onclick="goBack()" class="nav_room-title">
                 <i class="ri-arrow-left-line nav_room-icon"></i>
-                <p class="room-name">Deluxe Room</p>
+                <p class="room-name" id="room-name">Deluxe Room</p>
             </a>
         </nav>
     </header>
@@ -25,12 +25,12 @@
     <main class="main">
         <section class="first-section container" id="first-section">
             <div class="first-section-container grid">
-                <img src="/images/room-1.jpg" alt="Room 1" class="first_img">
+                <img src="/images/room-1.jpg" alt="room image" class="first_img" id="room-image">
                 <div class="first-section-content">
                     <h3 class="first_title">
                         Room Description
                     </h3>
-                    <p class="room_description">
+                    <p class="room_description" id="room-description">
                         Modern elegance is refined with flourishes of Indonesian culture
                         in our 44sqm deluxe rooms, which are equipped with the most
                         up-to-date amenities, free high-speed Wi-Fi, Smart LED TVs, a
@@ -47,25 +47,25 @@
                     <span class="material-symbols-outlined second-icon">
                         width
                     </span>
-                    <p class="second-description">44 m²</p>
+                    <p class="second-description" id="area">44 m²</p>
                 </div>
                 <div class="second-section-content">
                     <span class="material-symbols-outlined second-icon">
                         supervisor_account
                     </span>
-                    <p class="second-description">2 Guests</p>
+                    <p class="second-description" id="guest">2 Guests</p>
                 </div>
                 <div class="second-section-content">
                     <span class="material-symbols-outlined second-icon">
                         king_bed
                     </span>
-                    <p class="second-description">1 King Bed</p>
+                    <p class="second-description" id="bed">1 King Bed</p>
                 </div>
                 <div class="second-section-content">
                     <span class="material-symbols-outlined second-icon">
                         balcony
                     </span>
-                    <p class="second-description">Balcony</p>
+                    <p class="second-description" id="balcony">Balcony</p>
                 </div>
             </div>
         </section>
@@ -149,5 +149,6 @@
 
     <!-- ============= Link JavaScript =============  -->
     <script src="/js/shared.js"></script>
+    <script src="/js/modules/room-detail.js" type="module"></script>
 </body>
 </html>
