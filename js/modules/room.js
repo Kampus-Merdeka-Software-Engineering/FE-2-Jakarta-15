@@ -8,7 +8,7 @@ const setRoomData = async () => {
 
     rooms.data.forEach((item) => {
         containerUI.innerHTML += `
-        <div class="room_card">
+        <div class="room_card" onclick={redirectToDetail(${item.id})}>
             <div class="room_card-img">
                 <img src="${item.image}" alt="${item.name}-image">
                 <h3 class="room_card-title">${item.name}</h3>

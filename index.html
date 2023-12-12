@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/css/index.css">
     <title>Roomcation. | Home</title>
 </head>
+<script src="./js/modules/room.js" type="module"></script>
+<script src="/js/modules/room-detail.js" type="module"></script>
+
 <body>
      <!-- ============= Header Start =============  -->
     <header class="header" id="header">
@@ -27,14 +30,12 @@
                     <li class="nav_item">
                         <a href="about-us.html" class="nav_link">About Us</a>
                     </li>
-                    <li class="nav_item">
-                        <a href="login.html" class="button button-link">Sign In</a>
-                    </li>
-                    <li class="nav_item profile">
+        
+                    <!-- <li class="nav_item profile">
                         <div class="card_profile">
                             <img src="/images/atsiilah.png" alt="User Profile Image" class="user-profile">
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="nav_close" id="nav-close">
                     <i class="ri-close-line"></i>
@@ -105,8 +106,7 @@
                 <h2 class="section_title-center room_title">
                     Explore Our Top Rooms <br> From top rating
                 </h2>
-                <div class="room_container grid">
-                    
+                <div class="room_container grid" id="room_container">
                 </div>
         </section>
         <!-- Facilities Section -->
@@ -200,11 +200,11 @@
                 <form action="" class="contact_form">
                     <div class="contact_inputs">
                         <div class="contact_content">
-                            <input type="email" class="contact_input" id="email" placeholder=" " required>
+                            <input type="email" name="email" class="contact_input" id="email" placeholder=" " required>
                             <label for="email" class="contact_label">Email</label>
                         </div>
                         <div class="contact_content">
-                            <input type="text" class="contact_input" id="subject" placeholder=" " required>
+                            <input type="text" name="subject" class="contact_input" id="subject" placeholder=" " required>
                             <label for="subject" class="contact_label">Subject</label>
                         </div>
                         <div class="contact_content contact_area">
@@ -212,7 +212,7 @@
                             <label for="message" class="contact_label">Message</label>
                         </div>
                     </div>
-                    <button class="button button-flex">
+                    <button type="submit" class="button button-flex">
                         Send Message
                     </button>
                 </form>
@@ -234,14 +234,13 @@
                                 <img src="/images/customer1.jpg" alt="" class="profile-img">
                                 <div class="profile_description">
                                     <h3 class="profile-name">Alexander William</h3>
-                                    <p class="room-type">Deluxe Family Room</p>
+                                    <p class="room-type">Deluxe Room</p>
                                 </div>
                             </div>
                             <p class="testimonial_information">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Perspiciatis quisquam voluptatibus illum eligendi esse qui 
-                                quasi reprehenderit cumque quos nemo ea natus eius aliquid 
-                                laborum, sed rem incidunt repellendus impedit!
+                                My stay at Roomcation was fantastic! The staff was welcoming, the room was clean                                 
+                                and stylish, and the amenities were top-notch. I enjoyed the delicious breakfast options
+                                and the convenient location. Highly recommend! 
                             </p>
                         </div>
                         <div class="testimonials">
@@ -249,14 +248,13 @@
                                 <img src="/images/customer2.jpg" alt="" class="profile-img">
                                 <div class="profile_description">
                                     <h3 class="profile-name">Alexander Wongso</h3>
-                                    <p class="room-type">Deluxe Family Room</p>
+                                    <p class="room-type">Grand Deluxe Room</p>
                                 </div>
                             </div>
                             <p class="testimonial_information">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Perspiciatis quisquam voluptatibus illum eligendi esse qui 
-                                quasi reprehenderit cumque quos nemo ea natus eius aliquid 
-                                laborum, sed rem incidunt repellendus impedit!
+                                A wonderful experience at Roomcation! Impeccable service, stylish rooms, and 
+                                great facilities. The central location made exploring the city a breeze. Will definitely 
+                                return!
                             </p>
                         </div>
                         <div class="testimonials">
@@ -264,14 +262,13 @@
                                 <img src="/images/customer3.jpg" alt="" class="profile-img">
                                 <div class="profile_description">
                                     <h3 class="profile-name">Agustine William</h3>
-                                    <p class="room-type">Deluxe Family Room</p>
+                                    <p class="room-type">Luxury Room</p>
                                 </div>
                             </div>
                             <p class="testimonial_information">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Perspiciatis quisquam voluptatibus illum eligendi esse qui 
-                                quasi reprehenderit cumque quos nemo ea natus eius aliquid 
-                                laborum, sed rem incidunt repellendus impedit!
+                                Kudos to Roomcation for an amazing stay. The staff's hospitality was outstanding, 
+                                the room was pristine, and the dining options were delicious. Can't wait to come
+                                back!
                             </p>
                         </div>
                         <div class="testimonials">
@@ -279,14 +276,13 @@
                                 <img src="/images/customer4.jpg" alt="" class="profile-img">
                                 <div class="profile_description">
                                     <h3 class="profile-name">Amanda William</h3>
-                                    <p class="room-type">Deluxe Family Room</p>
+                                    <p class="room-type">Grand Luxury Room</p>
                                 </div>
                             </div>
                             <p class="testimonial_information">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Perspiciatis quisquam voluptatibus illum eligendi esse qui 
-                                quasi reprehenderit cumque quos nemo ea natus eius aliquid 
-                                laborum, sed rem incidunt repellendus impedit!
+                                I had a fantastic time at Roomcation. The modern amenities, friendly staff, and 
+                                convenient location made my stay memorable. Highly recommended for both
+                                business and leisure travelers!
                             </p>
                         </div>   
                     </div>
@@ -373,11 +369,10 @@
     <a href="#" class="scroll_up" id="scroll-up">
         <i class="ri-arrow-up-fill scroll_up-icon"></i>
     </a>
-
-<script src="./js/modules/room.js" type="module"></script>
     
     <!-- ============= Link JavaScript =============  -->
     <script src="/js/shared.js"></script>
     <script src="/js/index.js"></script>
+    
 </body>
 </html>
