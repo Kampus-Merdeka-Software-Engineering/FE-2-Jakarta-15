@@ -275,7 +275,6 @@ img {
 .room_container {
     gap: 1rem;
     padding-top: 4.5rem;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .room_card {

@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
     <title>Roomcation. | Home</title>
 </head>
 <script src="js/modules/room.js" type="module"></script>
@@ -373,6 +375,12 @@
     <!-- ============= Link JavaScript =============  -->
     <script src="js/shared.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        function redirectToDetail(id) {
+          window.location.href = `room-detail?id=${id}`;
+        }
+    </script>
+    
     
 </body>
 </html>

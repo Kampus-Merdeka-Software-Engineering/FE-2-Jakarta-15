@@ -1,6 +1,6 @@
 import { loadRoomById } from "../api/room.js";
 
-const loadRoomDetail = async () => {
+const setRoomDetail = async () => {
     const query = window.location.search;
     const urlSearchParams = new URLSearchParams(query);
 
@@ -16,4 +16,4 @@ const loadRoomDetail = async () => {
     document.getElementById("room-image").setAttribute("src", response.data.image);
 }
 
-loadRoomDetail();
+setRoomDetail();

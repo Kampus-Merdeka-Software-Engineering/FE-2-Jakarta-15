@@ -1,7 +1,7 @@
 const baseApiUrl =
     window.location.hostname === "localhost"
         ? "http://localhost:3666"
-        : "PATH_URL_API_RAILWAY";
+        : "https://be-2-jakarta-15-production.up.railway.app";
 
 const apiRoutes = {
     rooms: `${baseApiUrl}/rooms`,
