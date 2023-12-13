@@ -56,7 +56,7 @@ function goBack() {
 /* ============= Function to Detail ============= */
 
 function redirectToDetail(id) {
-  window.location.href = `/room-detail?id=${id}`
+  window.location.href = `room-detail?id=${id}`
 }
 
 
